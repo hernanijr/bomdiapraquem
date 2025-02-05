@@ -6,15 +6,5 @@
     "api/generateCategories": {
       "runtime": "edge"
     }
-  },
-  "cron": [
-    {
-      "path": "/api/fetchTweets",
-      "schedule": "0 0 */11 * *"
-    },
-    {
-      "path": "/api/generateCategories",
-      "schedule": "0 0 * * *"
-    }
-  ]
+  }
 }
