@@ -1,12 +1,5 @@
 {
-  "functions": {
-    "api/fetchTweets": {
-      "runtime": "nodejs18.x"
-    },
-    "api/generateCategories": {
-      "runtime": "nodejs18.x"
-    }
-  },
+
   "crons": [
     {
       "path": "/api/fetchTweets",
