@@ -1,10 +1,10 @@
 {
   "functions": {
     "api/fetchTweets": {
-      "runtime": "edge"
+      "runtime": "nodejs18.x"
     },
     "api/generateCategories": {
-      "runtime": "edge"
+      "runtime": "nodejs18.x"
     }
   },
   "crons": [
