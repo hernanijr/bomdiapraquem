@@ -6,7 +6,7 @@ interface Category {
   name: string;
 }
 import "./globals.css";
-import { createClient } from "@/utils/supabaseClient";
+import { createClient } from "./utils/supabaseClient";
 
 export default function Home() {
   const [categories, setCategories] = useState<string[]>(["Carregando categorias..."]);

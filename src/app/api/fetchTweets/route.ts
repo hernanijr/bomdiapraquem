@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
-import { createClient } from "@/utils/supabaseClient";
+import { createClient } from "../../utils/supabaseClient";
 
 const BEARER_TOKEN = process.env.TWITTER_BEARER_TOKEN;
 
