@@ -1,6 +1,10 @@
 'use client';
 
 import { useEffect, useState } from "react";
+
+interface Category {
+  name: string;
+}
 import "./globals.css";
 import { createClient } from "@/utils/supabaseClient";
 
@@ -21,7 +25,7 @@ export default function Home() {
         console.error("Erro ao buscar categorias do Supabase ou nenhuma categoria disponível:", error);
         setCategories(["Nenhuma categoria disponível no momento"]);
       } else {
-        setCategories(savedCategories.map((cat) => cat.name));
+        setCategories(savedCategories.map((cat: Category) => cat.name));
       }
 
       setLoading(false);

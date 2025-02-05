@@ -16,7 +16,11 @@ export async function POST() {
       },
     });
 
-    const tweets = response.data.data.map((tweet: any) => tweet.text);
+    interface Tweet {
+      text: string;
+    }
+
+    const tweets = response.data.data.map((tweet: Tweet) => tweet.text);
 
     // Salvar tweets no Supabase
     const supabase = createClient();
