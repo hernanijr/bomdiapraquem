@@ -19,3 +19,48 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ff4500;
+  margin-bottom: 20px;
+}
+
+.message {
+  white-space: pre-line;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color: #fff3e0; /* Fundo leve */
+  color: #171717; /* Texto escuro para contraste */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.copy-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.copy-button:hover {
+  background-color: #e03d00;
+}
+
